@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -15,7 +16,9 @@ h1 {
 }
 
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 img {
