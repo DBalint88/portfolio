@@ -15,20 +15,26 @@ h1 {
   font-weight: bold;
 }
 
-nav {
+h3 {
+  color: grey;
+}
+
+nav li {
+  width: auto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-self: center;
+
 }
 
 img {
     border: 2px dashed orange;
     width: 20%;
+    transition: all .3s;
 }
 
 img:hover {
-  border: 2px dashed red;
-  width: 30%;
+  border-radius: 50%;
 }
 
 p {
@@ -54,6 +60,7 @@ body{
 
 a {
   color: red;
+  transition: all .3s .1s;
 }
 
 a:hover {
@@ -63,4 +70,13 @@ a:hover {
 
 a:visited {
   color: brown;
+}
+
+body li {
+  color: gold;
+}
+
+body li:nth-child(3n+1) {
+  background-color: purple;
+  display: inline-block;
 }
