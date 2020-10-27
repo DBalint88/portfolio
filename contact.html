@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"
+    href="styles/styles.css">
+    <title>Contact Dan</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>Contact Dan!</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form class="contact-page" action="contact.html" method="GET">
+
+      <label>First Name: <input type="text" name="firstName" placeholder="First Name" required></label>
+
+      <label>Last Name: <input type="text" name="lastName" placeholder="Last Name" required></label>
+
+      <label>Where are you from? <select name="region" required>
+        <option value="">Select one</option>
+        <option value="CT">Connecticut</option>
+        <option value="WA">Washington State</option>
+        <option value="Other">Someplace else</option>
+      </select></label>
+
+      <label class="what-want-box">What do you want? <textarea class="what-want" name="whatWant" rows="8" cols="80"></textarea></label>
+
+      <fieldset  required>
+        <legend>Do you want me to get back to you?</legend>
+        <label><input type="radio" name="wantReply" value="followUp">Yes, I'd like to hear back.</label>
+        <label class="last-in-field"><input type="radio" name="wantReply" value="disRegard">Nah, just sayin' hi bro.</label>
+      </fieldset>
+      <label>If you want me to reply, please leave your email.<input type="email" name="eMail" </label>
+      <label class="happy">On a scale of 1-5, rate how happy you feel right now.<input type="range" name="happyRating" min="1" max="5" step="1" value="3" required></label>
+      <label>Click to send: <input class="submit" type="submit" name="submit" value="Get at me!"></label>
+
+    </form>
+
+  </body>
+</html>
